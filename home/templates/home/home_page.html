@@ -1,21 +1,68 @@
 {% extends "base.html" %}
 {% load static %}
-
-{% block body_class %}template-homepage{% endblock %}
-
-{% block extra_css %}
-
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-<link rel="stylesheet" href="{% static 'css/welcome_page.css' %}">
-{% endblock extra_css %}
-
 {% block content %}
 
-{% comment %}
-Delete the line below if you're just getting started and want to remove the welcome screen!
-{% endcomment %}
-{% include 'home/welcome_page.html' %}
+
+<header class="site-header">
+    <div class="container">
+        <img src="" alt="FutureGov" class="site-header__logo"/>
+        <nav class="site-header__menu">
+            <!-- Menu here -->
+        </nav>
+    </div>
+</header>
+
+<section class="hero hero--pink">
+    <h1 class="hero__headline">Opportunities at FutureGov</h1>
+    <a class="hero__button" href="#">Current opportunties</a>
+</section>
+
+<section class="text-columns">
+    <div class="container text-columns__inner">
+        <aside class="text-columns__column">
+            <h2 class="text-columns__headline">Our ethos</h2>
+        </aside>
+        <aside class="text-columns__column">
+            <!-- Content here -->
+        </aside>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="container">
+        <h2 class="text-columns__headline">Our ethos</h2>
+        <div class="benefits__grid">
+            <!-- x6 -->
+            <div class="benefits__benefit">
+                <h3 class="benefits__benefit-headline">Lasting impact</h3>
+                <p class="benefits__benefit-content"></p>
+            </div>
+            <!-- x6 -->
+        </div>
+    </div>
+</section>
+
+<section class="current-vacancies">
+    <div class="container current-vacancies__inner">
+        <aside class="current-vacancies__column">
+            <h2 class="current-vacancies__headline">Current vacancies</h2>
+        </aside>
+        <aside class="current-vacancies__column">
+            <ul class="vacancy-list">
+                <!-- x4? -->
+                <li class="vacancy-list__vacancy">
+                    <h3 class="vacancy-list__headline">Job title</h3>
+                    <p class="vacancy-list__meta"><strong>Design team</strong> Closes 1st September 2019</p>
+                </li>
+                <!-- x4? -->
+            </ul>
+        </aside>
+    </div>
+</section>
+
+<section class="testimonials">
+    <
+</section>
+
 
 {% endblock content %}
