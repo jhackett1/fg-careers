@@ -19,12 +19,12 @@
 
 <section class="text-columns">
     <div class="container text-columns__inner">
-        <aside class="text-columns__column">
+        <div class="text-columns__column">
             <h2 class="text-columns__headline">Our ethos</h2>
-        </aside>
-        <aside class="text-columns__column">
+        </div>
+        <div class="text-columns__column">
             <!-- Content here -->
-        </aside>
+        </div>
     </div>
 </section>
 
@@ -44,25 +44,92 @@
 
 <section class="current-vacancies">
     <div class="container current-vacancies__inner">
-        <aside class="current-vacancies__column">
+        <div class="current-vacancies__column">
             <h2 class="current-vacancies__headline">Current vacancies</h2>
-        </aside>
-        <aside class="current-vacancies__column">
+        </div>
+        <div class="current-vacancies__column">
             <ul class="vacancy-list">
                 <!-- x4? -->
                 <li class="vacancy-list__vacancy">
-                    <h3 class="vacancy-list__headline">Job title</h3>
+                    <a href="#" class="vacancy-list__link">
+                        <h3 class="vacancy-list__headline">Job title</h3>
+                    </a>
                     <p class="vacancy-list__meta"><strong>Design team</strong> Closes 1st September 2019</p>
                 </li>
                 <!-- x4? -->
             </ul>
-        </aside>
+        </div>
     </div>
 </section>
 
 <section class="testimonials">
-    <
+    <div class="testimonials__testimonial testimonials__testimonial--purple">
+        <div class="testimonials__image-holder"></div>
+        <div class="testimonials__quote-holder">
+            <blockquote class="testimonials__blockquote">
+                <q class="testimonials__quote">Quote here</q>
+                <caption>
+                    <span class="testimonials__name"Jen</span>
+                    <span class="testimonials__role">Project director</span>
+                </caption>
+            </blockquote>
+        </div>
+    </div>
+    <div class="testimonials__testimonial testimonials__testimonial--reversed">
+        <div class="testimonials__image-holder"></div>
+        <div class="testimonials__quote-holder">
+            <blockquote class="testimonials__blockquote">
+                <q class="testimonials__quote">Quote here</q>
+                <caption>
+                    <span class="testimonials__name"Jen</span>
+                    <span class="testimonials__role">Project director</span>
+                </caption>
+            </blockquote>
+        </div>
+    </div>
+    <div class="testimonials__testimonial testimonials__testimonial--pink">
+        <div class="testimonials__image-holder"></div>
+        <div class="testimonials__quote-holder">
+            <blockquote class="testimonials__blockquote">
+                <q class="testimonials__quote">Quote here</q>
+                <caption>
+                    <span class="testimonials__name"Jen</span>
+                    <span class="testimonials__role">Project director</span>
+                </caption>
+            </blockquote>
+        </div>
+    </div>
 </section>
+
+<section class="people-grid">
+    <div class="container">
+        <h2>Who will you meet first?</h2>
+        <div class="people-grid__grid">
+            <!-- x3 -->
+            <div class="person">
+                <img src="" alt="Rob" class="person__portrait"/>
+                <h3 class="person__name">Rob</h3>
+                <span class="person__role">Role</span>
+                <p class="person__biography">Bio here</p>
+            </div> 
+            <!-- x3 -->
+        </div>
+    </div>
+</section>
+
+<section class="call-to-action">
+    <div>
+        <h2 class="call-to-action__headline">Haven't found what you're looking for?</h2>
+    </div>
+    <div>
+        <p>Content here</p>
+        <a href="#">Apply now</a>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <p>© FutureGov 2019  Registered Company No. 6472420</p>
+</footer>
 
 
 {% endblock content %}
