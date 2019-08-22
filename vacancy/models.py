@@ -10,8 +10,6 @@ class VacancyPage(Page):
         "home.HomePage"
     ]
 
-    
-
     # page_title = models.CharField(max_length=100, blank=True, null=False)
 
     # content_panels = Page.content_panels + [
