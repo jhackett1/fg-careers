@@ -29,6 +29,8 @@ INSTALLED_APPS = [
     'vacancy',
     'streams',
 
+    'wagtail.contrib.styleguide',
+
     'wagtail.contrib.forms',
     'wagtail.contrib.redirects',
     'wagtail.embeds',

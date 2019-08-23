@@ -5,6 +5,8 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.core.fields import StreamField
 from wagtail.admin.edit_handlers import StreamFieldPanel
 
+from streams import blocks
+
 class VacancyPage(Page):
     template = "vacancy/vacancy_page.html"
 
@@ -12,7 +14,6 @@ class VacancyPage(Page):
         "home.HomePage"
     ]
 
-    content = StreamField()
     hero_image = models.ForeignKey(
         "wagtailimages.Image",
         null=True,
@@ -20,6 +21,18 @@ class VacancyPage(Page):
         on_delete=models.SET_NULL,
         related_name="+",
         help_text="test"
+    )
+    content = StreamField(
+        [
+            ("text", blocks.TextBlock()),
+            ("benefits", blocks.BenefitsBlock()),
+            ("vacancies", blocks.VacanciesBlock()),
+            ("testimonials", blocks.TestimonialsBlock()),
+            ("person_cards", blocks.PersonCardsBlock()),
+            ("call_to_action", blocks.CallToActionBlock())
+        ],
+        null=True,
+        blank=True
     )
 
     content_panels = Page.content_panels + [
