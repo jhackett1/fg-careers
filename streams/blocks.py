@@ -59,3 +59,27 @@ class CallToActionBlock(blocks.StructBlock):
     class Meta:
         icon = "tick"
         label = "Call to action bar"
+
+
+class KeyStatsBlock(blocks.StructBlock):
+    stats = blocks.ListBlock(blocks.StructBlock([
+        ('label', blocks.CharBlock()),
+        ('value', blocks.CharBlock()),
+    ]))
+    class Meta:
+        icon = "success"
+        label = "Key stats"
+
+
+class CaseStudiesBlock(blocks.StructBlock):
+    headline = blocks.CharBlock(max_length=200)
+    case_studies = blocks.ListBlock(blocks.StructBlock([
+        ('image', ImageChooserBlock()),
+        ('headline', blocks.CharBlock()),
+        ('slugline', blocks.CharBlock()),
+        ('kicker', blocks.CharBlock()),
+        ('destination', blocks.URLBlock()),
+    ]))
+    class Meta:
+        icon = "group"
+        label = "Person cards"
