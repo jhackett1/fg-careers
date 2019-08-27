@@ -1,0 +1,38 @@
+.benefits{
+    background: $purple;
+    color: $white;
+    padding: 50px 20px;
+    position: relative;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/static/benefits_bg.jpg');
+        background-attachment: fixed;
+        opacity: 0.1;
+    }
+}
+
+.benefits__headline{
+    margin-bottom: 30px;
+    font-size: 1.7em;
+}
+
+.benefits__benefit{
+    margin-bottom: 25px;
+}
+
+.benefits__benefit-crosshead{
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.benefits__benefit-content{
+    font-size: 1.1em;
+}

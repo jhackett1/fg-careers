@@ -19,7 +19,13 @@ $white: #ffffff;
     width: 100%;
 }
 
+*::selection{
+    background-color: transparentize(darken($pink,15), 0.25)
+}
+
 
 @import "header";
 @import "hero";
 @import "text-columns";
+@import "benefits";
+@import "vacancies";

@@ -1,11 +1,11 @@
 <section class="benefits">
     <div class="container">
-        <h2 class="text-columns__headline">{{ value.headline }}</h2>
+        <h2 class="benefits__headline">{{ value.headline }}</h2>
         <div class="benefits__grid">
             {% for benefit in value.benefits %}
                 <div class="benefits__benefit">
-                    <h3 class="benefits__benefit-headline">{{benefit.crosshead}}</h3>
-                    <p class="benefits__benefit-content">{{benefit.content}}</p>
+                    <h3 class="benefits__benefit-crosshead">{{benefit.crosshead}}</h3>
+                    <div class="benefits__benefit-content">{{benefit.content}}</div>
                 </div>
             {% endfor %}
         </div>

@@ -1,11 +1,11 @@
-<section class="current-vacancies">
-        <div class="container current-vacancies__inner">
-            <div class="current-vacancies__column">
-                <h2 class="current-vacancies__headline">Current vacancies</h2>
+<section class="vacancies">
+        <div class="container vacancies__inner">
+            <div class="vacancies__column">
+                <h2 class="vacancies__headline">Current vacancies</h2>
             </div>
-            <div class="current-vacancies__column">
+            <div class="vacancies__column">
                 <ul class="vacancy-list">
-                    {% for vacancy in self.get_children %}
+                    {% for vacancy in page.get_children %}
                         <li class="vacancy-list__vacancy">
                             <a href="{{ vacancy.url }}" class="vacancy-list__link">
                                 <h3 class="vacancy-list__headline">{{ vacancy.title }}</h3>

@@ -1,3 +1,20 @@
 .text-columns{
-    padding: 20px;
+    padding: 50px 20px;
+    color: $text;
+}
+
+.text-columns__headline{
+    margin-bottom: 15px;
+    font-size: 1.7em;
+}
+
+
+.text-columns__content{
+    p, br{
+        margin-bottom: 15px;
+    }
+}
+
+.text-columns__content--large{
+    font-size: 1.2em;
 }

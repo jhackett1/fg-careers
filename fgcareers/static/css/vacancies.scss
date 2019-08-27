@@ -1,0 +1,38 @@
+.vacancies{
+    padding: 50px 20px;
+    color: $text;
+}
+
+.vacancies__headline{
+    margin-bottom: 30px;
+    font-size: 1.7em;
+}
+
+.vacancy-list{
+    list-style: none;
+}
+
+.vacancy-list__vacancy{
+    margin-bottom: 25px;
+}
+
+.vacancy-list__link{
+    color: $pink;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-table;
+    border-bottom: 2px solid $pink;
+    margin-bottom: 5px;
+    transition: 0.1s ease-out;
+    &:hover{
+        border-color: $white;
+    }
+}
+
+.vacancy-list__meta{
+    font-size: 1.1em;
+
+    strong{
+        margin-right: 5px;
+    }
+}
