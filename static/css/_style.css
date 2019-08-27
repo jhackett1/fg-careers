@@ -10,7 +10,7 @@ p, q {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1500px;
+  max-width: 1300px;
   width: 100%; }
 
 *::selection {
@@ -132,10 +132,14 @@ p, q {
 
 .benefits__headline {
   margin-bottom: 30px;
-  font-size: 1.7em; }
+  font-size: 1.7em;
+  position: relative;
+  z-index: 2; }
 
 .benefits__benefit {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2; }
 
 .benefits__benefit-crosshead {
   font-size: 1.4em;
@@ -177,16 +181,48 @@ p, q {
   .vacancy-list__meta strong {
     margin-right: 5px; }
 
-.testimonials__testimonial:nth-of-type(1) {
-  background: #e53094;
-  color: #ffffff; }
-
-.testimonials__testimonial:nth-of-type(3) {
-  background: #292242;
-  color: #ffffff; }
+.testimonials__testimonial {
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+  .testimonials__testimonial:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/static/hero.jpg");
+    opacity: 0.3; }
+  .testimonials__testimonial:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 100%); }
+  .testimonials__testimonial:nth-of-type(1) {
+    background: #e53094;
+    color: #ffffff; }
+    .testimonials__testimonial:nth-of-type(1):after {
+      background: linear-gradient(0deg, rgba(229, 48, 148, 0) 0%, #e53094 100%); }
+    .testimonials__testimonial:nth-of-type(1):before {
+      background-image: url("/static/benefits_bg.jpg"); }
+  .testimonials__testimonial:nth-of-type(3) {
+    background: #292242;
+    color: #ffffff; }
+    .testimonials__testimonial:nth-of-type(3):after {
+      background: linear-gradient(0deg, rgba(41, 34, 66, 0) 0%, #292242 100%); }
 
 .testimonials__quote-holder {
-  padding: 50px 20px; }
+  padding: 50px 20px;
+  position: relative;
+  z-index: 2; }
 
 .testimonials__quote {
   display: block;
@@ -213,7 +249,7 @@ p, q {
   margin-bottom: 20px;
   padding: 25px;
   margin-top: 70px;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .person__name {
   font-size: 1.4em;
@@ -266,5 +302,12 @@ p, q {
   .call-to-action__button:hover {
     background: #e53094;
     color: #ffffff; }
+
+.site-footer {
+  padding: 30px 20px;
+  background: #f4f2f3;
+  text-align: center;
+  color: rgba(80, 78, 79, 0.5);
+  font-size: 0.9em; }
 
 /*# sourceMappingURL=_style.css.map */

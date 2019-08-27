@@ -22,10 +22,14 @@
 .benefits__headline{
     margin-bottom: 30px;
     font-size: 1.7em;
+    position: relative;
+    z-index: 2;
 }
 
 .benefits__benefit{
     margin-bottom: 25px;
+    position: relative;
+    z-index: 2;
 }
 
 .benefits__benefit-crosshead{

@@ -1,20 +1,54 @@
-// .testimonials{
-//     text-align: center;
-// }
-
 .testimonials__testimonial{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/static/hero.jpg');
+        opacity: 0.3;
+    }
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 70%;
+        width: 100%;
+        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    }
+
     &:nth-of-type(1){
         background: $pink;
         color: $white;
+        &:after{
+            background: linear-gradient(0deg, transparentize($pink, 1) 0%, $pink 100%);
+        }
+        &:before{
+            background-image: url('/static/benefits_bg.jpg');
+        }
     }
     &:nth-of-type(3){
         background: $purple;
         color: $white;
+        &:after{
+            background: linear-gradient(0deg, transparentize($purple, 1) 0%, $purple 100%);
+        }
     }
 }
 
 .testimonials__quote-holder{
     padding: 50px 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .testimonials__quote{
