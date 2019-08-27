@@ -8,7 +8,7 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 from streams import blocks
 
 class HomePage(Page):
-    template = "home/home_page.html"
+    template = "home_page.html"
     max_count = 1
 
     hero_image = models.ForeignKey(

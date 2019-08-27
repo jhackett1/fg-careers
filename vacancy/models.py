@@ -8,7 +8,7 @@ from wagtail.images.edit_handlers import ImageChooserPanel
 from streams import blocks
 
 class VacancyPage(Page):
-    template = "vacancy/vacancy_page.html"
+    template = "vacancy_page.html"
 
     parent_page_type = [
         "home.HomePage"

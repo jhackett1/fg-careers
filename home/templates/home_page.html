@@ -2,16 +2,6 @@
 {% load static %}
 {% block content %}
 
-
-<header class="site-header">
-    <div class="container">
-        <img src="" alt="FutureGov" class="site-header__logo"/>
-        <nav class="site-header__menu">
-            <!-- Menu here -->
-        </nav>
-    </div>
-</header>
-
 <section class="hero hero--pink">
     <h1 class="hero__headline">Opportunities at FutureGov</h1>
     <a class="hero__button" href="#">Current opportunties</a>
@@ -49,14 +39,14 @@
         </div>
         <div class="current-vacancies__column">
             <ul class="vacancy-list">
-                <!-- x4? -->
-                <li class="vacancy-list__vacancy">
-                    <a href="#" class="vacancy-list__link">
-                        <h3 class="vacancy-list__headline">Job title</h3>
-                    </a>
-                    <p class="vacancy-list__meta"><strong>Design team</strong> Closes 1st September 2019</p>
-                </li>
-                <!-- x4? -->
+                {% for vacancy in self.get_children %}
+                    <li class="vacancy-list__vacancy">
+                        <a href="{{ vacancy.url }}" class="vacancy-list__link">
+                            <h3 class="vacancy-list__headline">{{ vacancy.title }}</h3>
+                        </a>
+                        <p class="vacancy-list__meta"><strong>Design team</strong> Closes 1st September 2019</p>
+                    </li>
+                {% endfor %}
             </ul>
         </div>
     </div>
@@ -97,7 +87,7 @@
                     <span class="testimonials__role">Project director</span>
                 </caption>
             </blockquote>
-        </div>
+        </div
     </div>
 </section>
 
@@ -126,10 +116,5 @@
         <a href="#">Apply now</a>
     </div>
 </section>
-
-<footer class="site-footer">
-    <p>© FutureGov 2019  Registered Company No. 6472420</p>
-</footer>
-
 
 {% endblock content %}

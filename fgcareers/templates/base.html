@@ -18,7 +18,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/fgcareers.css' %}">
+
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        
+        <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css">
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -28,7 +31,20 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
+        <header class="site-header">
+            <div class="container">
+                <img src="" alt="FutureGov" class="site-header__logo"/>
+                <nav class="site-header__menu">
+                    <!-- Menu here -->
+                </nav>
+            </div>
+        </header>
+
         {% block content %}{% endblock %}
+
+        <footer class="site-footer">
+            <p>© FutureGov 2019  Registered Company No. 6472420</p>
+        </footer>
 
         {# Global javascript #}
         <script type="text/javascript" src="{% static 'js/fgcareers.js' %}"></script>
