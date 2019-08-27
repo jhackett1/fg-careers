@@ -1,0 +1,17 @@
+
+<section class="testimonials">
+    {% for testimonial in value.testimonials %}
+        <div class="testimonials__testimonial testimonials__testimonial--purple">
+            <div class="testimonials__image-holder"></div>
+            <div class="testimonials__quote-holder">
+                <blockquote class="testimonials__blockquote">
+                    <q class="testimonials__quote">{{testimonial.quotation}}</q>
+                    <caption>
+                        <span class="testimonials__name">{{testimonial.attribution_name}}</span>
+                        <span class="testimonials__role">{{testimonial.attribution_role}}</span>
+                    </caption>
+                </blockquote>
+            </div>
+        </div>
+    {% endfor %}
+</section>

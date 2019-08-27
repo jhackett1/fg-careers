@@ -8,6 +8,7 @@ class TextBlock(blocks.StructBlock):
     class Meta:
         icon = "doc-full-inverse"
         label = "Text"
+        template = "text-columns.html"
 
 
 class BenefitsBlock(blocks.StructBlock):
@@ -20,12 +21,14 @@ class BenefitsBlock(blocks.StructBlock):
     class Meta:
         icon = "pick"
         label = "Benefits"
+        template = "benefits.html"
 
 
 class VacanciesBlock(blocks.StaticBlock):
     class Meta:
         icon = "list-ul"
         label = "Current vacancies"
+        template = "vacancies.html"
 
 
 class TestimonialsBlock(blocks.StructBlock):
@@ -38,6 +41,7 @@ class TestimonialsBlock(blocks.StructBlock):
     class Meta:
         icon = "openquote"
         label = "Testimonials"
+        template = "testimonials.html"
 
 
 class PersonCardsBlock(blocks.StructBlock):
@@ -50,6 +54,7 @@ class PersonCardsBlock(blocks.StructBlock):
     class Meta:
         icon = "group"
         label = "Person cards"
+        template = "person-cards.html"
 
 
 class CallToActionBlock(blocks.StructBlock):
@@ -61,6 +66,7 @@ class CallToActionBlock(blocks.StructBlock):
     class Meta:
         icon = "tick"
         label = "Call to action bar"
+        template = "call-to-action.html"
 
 
 class KeyStatsBlock(blocks.StructBlock):
@@ -71,6 +77,7 @@ class KeyStatsBlock(blocks.StructBlock):
     class Meta:
         icon = "success"
         label = "Key stats"
+        template = "key-stats.html"
 
 
 class CaseStudiesBlock(blocks.StructBlock):
@@ -84,4 +91,5 @@ class CaseStudiesBlock(blocks.StructBlock):
     ]))
     class Meta:
         icon = "doc-full"
-        label = "Case studies"
+        label = "Case studies"       
+        template = "case-studies.html"

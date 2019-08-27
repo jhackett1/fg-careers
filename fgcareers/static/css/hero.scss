@@ -1,0 +1,49 @@
+// Hero
+.hero{
+    padding: 80px 20px;
+    background-color: $background;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-image: url('/static/hero.jpg');
+        opacity: 0.2;
+    }
+}
+
+.hero--pink{
+    background-color: $pink;
+    color: $white;
+}
+
+.hero__headline{
+    font-size: 2em;
+    z-index: 2;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero__button{
+    color: $white;
+    border: 1px solid $white;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+    &:hover{
+        background: $white;
+        color: $pink;
+    }
+}

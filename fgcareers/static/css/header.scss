@@ -1,0 +1,46 @@
+.site-header{
+    padding: 20px;
+}
+.site-header__logo{
+    max-width: 175px;
+}
+.site-header__menu{
+    display: none;
+}
+
+
+.nav-menu{
+    list-style-type: none;
+}
+.nav-menu--left{
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid $text;
+}
+.nav-menu__item{
+    display: inline-block;
+    margin-right: 13px;
+    font-size: 1.1em;
+    &:last-of-type{
+        margin-right: 0px;
+    }
+}
+.nav-menu__link{
+    color: $text;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+
+@media screen and (min-width: 830px){
+    .site-header__inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .site-header__menu{
+        display: flex;
+    }
+}
