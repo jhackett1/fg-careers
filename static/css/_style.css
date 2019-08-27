@@ -159,16 +159,109 @@
   color: #e53094;
   font-size: 1.2em;
   text-decoration: none;
-  display: inline-table;
+  display: inline;
   border-bottom: 2px solid #e53094;
-  margin-bottom: 5px;
   transition: 0.1s ease-out; }
   .vacancy-list__link:hover {
     border-color: #ffffff; }
 
+.vacancy-list__headline {
+  display: inline; }
+
 .vacancy-list__meta {
+  margin-top: 5px;
   font-size: 1.1em; }
   .vacancy-list__meta strong {
     margin-right: 5px; }
+
+.testimonials__testimonial:nth-of-type(1) {
+  background: #e53094;
+  color: #ffffff; }
+
+.testimonials__testimonial:nth-of-type(3) {
+  background: #292242;
+  color: #ffffff; }
+
+.testimonials__quote-holder {
+  padding: 50px 20px; }
+
+.testimonials__quote {
+  display: block;
+  font-size: 1.3em;
+  margin-bottom: 15px; }
+
+.testimonials__name {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.people-grid {
+  background: #f4f2f3;
+  padding: 50px 20px;
+  color: #170710;
+  text-align: center; }
+
+.people-grid__headline {
+  margin-bottom: 30px;
+  font-size: 1.7em; }
+
+.person {
+  background: #ffffff;
+  margin-bottom: 20px;
+  padding: 25px;
+  margin-top: 70px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); }
+
+.person__name {
+  font-size: 1.4em;
+  margin-bottom: 5px; }
+
+.person__role {
+  font-size: 1.1em;
+  display: block;
+  color: #504e4f;
+  margin-bottom: 10px; }
+
+.person__biography {
+  font-size: 1.1em; }
+
+.person__portrait {
+  margin-top: -70px;
+  border-radius: 100%;
+  margin-bottom: 25px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; }
+
+.call-to-action {
+  background: #e53094;
+  padding: 50px 20px;
+  color: #ffffff;
+  text-align: center; }
+
+.call-to-action__headline {
+  font-size: 2.2em;
+  position: relative;
+  margin-bottom: 20px; }
+
+.call-to-action .rich-text {
+  font-size: 1.1em;
+  margin-bottom: 25px; }
+
+.call-to-action__button {
+  color: #e53094;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 12px 45px;
+  border-radius: 100px;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+  font-weight: bold;
+  font-size: 1.2em; }
+  .call-to-action__button:hover {
+    background: #e53094;
+    color: #ffffff; }
 
 /*# sourceMappingURL=_style.css.map */

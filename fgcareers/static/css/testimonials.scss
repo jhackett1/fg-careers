@@ -1,0 +1,30 @@
+// .testimonials{
+//     text-align: center;
+// }
+
+.testimonials__testimonial{
+    &:nth-of-type(1){
+        background: $pink;
+        color: $white;
+    }
+    &:nth-of-type(3){
+        background: $purple;
+        color: $white;
+    }
+}
+
+.testimonials__quote-holder{
+    padding: 50px 20px;
+}
+
+.testimonials__quote{
+    display: block;
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.testimonials__name{
+    display: block;
+    font-weight: bold;
+    font-size: 1.5em;
+}

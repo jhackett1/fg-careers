@@ -20,18 +20,21 @@
     color: $pink;
     font-size: 1.2em;
     text-decoration: none;
-    display: inline-table;
+    display: inline;
     border-bottom: 2px solid $pink;
-    margin-bottom: 5px;
     transition: 0.1s ease-out;
     &:hover{
         border-color: $white;
     }
 }
 
-.vacancy-list__meta{
-    font-size: 1.1em;
+.vacancy-list__headline{
+    display: inline;
+}
 
+.vacancy-list__meta{
+    margin-top: 5px;
+    font-size: 1.1em;
     strong{
         margin-right: 5px;
     }

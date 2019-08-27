@@ -33,7 +33,7 @@ class VacanciesBlock(blocks.StaticBlock):
 
 class TestimonialsBlock(blocks.StructBlock):
     testimonials = blocks.ListBlock(blocks.StructBlock([
-        ('quotation', blocks.RichTextBlock(features=['bold', 'italic', 'link'])),
+        ('quotation', blocks.TextBlock()),
         ('attribution_name', blocks.CharBlock()),
         ('attribution_role', blocks.CharBlock()),
         ('image', ImageChooserBlock())
@@ -45,6 +45,7 @@ class TestimonialsBlock(blocks.StructBlock):
 
 
 class PersonCardsBlock(blocks.StructBlock):
+    headline = blocks.CharBlock(max_length=200)
     people = blocks.ListBlock(blocks.StructBlock([
         ('image', ImageChooserBlock()),
         ('name', blocks.CharBlock()),

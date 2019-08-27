@@ -1,0 +1,44 @@
+.people-grid{
+    background: $background;
+    padding: 50px 20px;
+    color: $text;
+    text-align: center;
+}
+
+.people-grid__headline{
+    margin-bottom: 30px;
+    font-size: 1.7em;
+}
+
+.person{
+    background: $white;
+    margin-bottom: 20px;
+    padding: 25px;
+    margin-top: 70px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.1)
+}
+
+.person__name{
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.person__role{
+    font-size: 1.1em;
+    display: block;
+    color: $grey;
+    margin-bottom: 10px;
+}
+
+.person__biography{
+    font-size: 1.1em;
+}
+
+.person__portrait{
+    margin-top: -70px;
+    border-radius: 100%;
+    margin-bottom: 25px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

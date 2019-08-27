@@ -2,14 +2,14 @@
 
 <section class="people-grid">
     <div class="container">
-        <h2>{{value.headline}}</h2>
+        <h2 class="people-grid__headline">{{value.headline}}</h2>
         <div class="people-grid__grid">
             {% for person in value.people %}
             <div class="person">
                 {% image person.image fill-200x200 class="person__portrait" %}
                 <h3 class="person__name">{{person.name}}</h3>
                 <span class="person__role">{{person.role}}</span>
-                <p class="person__biography">{{person.biography}}</p>
+                <div class="person__biography">{{person.biography}}</div>
             </div> 
             {% endfor %}
         </div>

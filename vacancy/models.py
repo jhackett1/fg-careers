@@ -2,7 +2,7 @@ from django.db import models
 
 from wagtail.core.models import Page
 from wagtail.core.fields import StreamField
-from wagtail.admin.edit_handlers import StreamFieldPanel
+from wagtail.admin.edit_handlers import StreamFieldPanel, FieldRowPanel, FieldPanel, MultiFieldPanel
 from wagtail.images.edit_handlers import ImageChooserPanel
 
 from streams import blocks
@@ -22,6 +22,9 @@ class VacancyPage(Page):
         related_name="+",
         help_text="test"
     )
+    team = models.CharField(max_length=100, null=True, blank=False)
+    location = models.CharField(max_length=100, null=True, blank=False)
+    salary = models.CharField(max_length=100, null=True, blank=False)
     content = StreamField(
         [
             ("text", blocks.TextBlock()),
@@ -35,5 +38,10 @@ class VacancyPage(Page):
 
     content_panels = Page.content_panels + [
         ImageChooserPanel("hero_image"),
+        MultiFieldPanel([FieldRowPanel([
+            FieldPanel("team"),
+            FieldPanel("location"),
+            FieldPanel("salary")
+        ])], "Key vacancy info"),
         StreamFieldPanel("content")
     ]
