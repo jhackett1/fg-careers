@@ -1,5 +1,4 @@
-{% load static wagtailuserbar %}
-{% load sass_tags %}
+{% load static wagtailuserbar sass_tags %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -20,8 +19,9 @@
 
         {# Global stylesheets #}
 
-        <link rel="stylesheet" type="text/css" href="{% sass_src 'style.scss' %}">
         <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css">
+        <link rel="stylesheet" type="text/css" href="{% sass_src 'style.scss' %}">
+
 
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
@@ -31,14 +31,7 @@
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
-        <header class="site-header">
-            <div class="container">
-                <img src="" alt="FutureGov" class="site-header__logo"/>
-                <nav class="site-header__menu">
-                    <!-- Menu here -->
-                </nav>
-            </div>
-        </header>
+        {% include 'partials/_header.html' %}
 
         {% block content %}{% endblock %}
 
