@@ -83,5 +83,5 @@ class CaseStudiesBlock(blocks.StructBlock):
         ('destination', blocks.URLBlock()),
     ]))
     class Meta:
-        icon = "group"
-        label = "Person cards"
+        icon = "doc-full"
+        label = "Case studies"

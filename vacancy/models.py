@@ -1,9 +1,9 @@
 from django.db import models
 
 from wagtail.core.models import Page
-from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.core.fields import StreamField
 from wagtail.admin.edit_handlers import StreamFieldPanel
+from wagtail.images.edit_handlers import ImageChooserPanel
 
 from streams import blocks
 
@@ -25,10 +25,8 @@ class VacancyPage(Page):
     content = StreamField(
         [
             ("text", blocks.TextBlock()),
-            ("benefits", blocks.BenefitsBlock()),
-            ("vacancies", blocks.VacanciesBlock()),
-            ("testimonials", blocks.TestimonialsBlock()),
-            ("person_cards", blocks.PersonCardsBlock()),
+            ("key_stats", blocks.KeyStatsBlock()),
+            ("case_studies", blocks.CaseStudiesBlock()),
             ("call_to_action", blocks.CallToActionBlock())
         ],
         null=True,
