@@ -1,4 +1,5 @@
 {% load static wagtailuserbar %}
+{% load sass_tags %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -19,7 +20,7 @@
 
         {# Global stylesheets #}
 
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% sass_src 'css/style.scss' %}">
         
         <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css">
 
@@ -47,7 +48,7 @@
         </footer>
 
         {# Global javascript #}
-        <script type="text/javascript" src="{% static 'js/fgcareers.js' %}"></script>
+        <!-- <script type="text/javascript" src="{% static 'js/fgcareers.js' %}"></script> -->
 
         {% block extra_js %}
             {# Override this in templates to add extra javascript #}

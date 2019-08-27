@@ -29,6 +29,9 @@ INSTALLED_APPS = [
     'vacancy',
     'streams',
 
+    # Compile sass
+    'sass_processor',
+    # Activate admin UI style guide
     'wagtail.contrib.styleguide',
 
     'wagtail.contrib.forms',
