@@ -1,11 +1,25 @@
 .vacancies{
     padding: 50px 20px;
     color: $text;
+    @media screen and (min-width: 830px) {
+        padding: 100px 10%;
+    }
+}
+
+.vacancies__inner{
+    @media screen and (min-width: 830px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 40px;
+    }
 }
 
 .vacancies__headline{
     margin-bottom: 30px;
     font-size: 1.7em;
+    @media screen and (min-width: 830px) {
+        font-size: 2em;
+    }
 }
 
 .vacancy-list{
@@ -14,6 +28,12 @@
 
 .vacancy-list__vacancy{
     margin-bottom: 25px;
+    @media screen and (min-width: 830px) {
+        margin-bottom: 35px;
+    }
+    &:last-of-type{
+        margin-bottom: 0px;
+    }
 }
 
 .vacancy-list__link{
@@ -22,9 +42,16 @@
     text-decoration: none;
     display: inline;
     border-bottom: 2px solid $pink;
-    transition: 0.1s ease-out;
+    transition: border-bottom 0.1s ease-out;
     &:hover{
         border-color: $white;
+    }
+    @media screen and (min-width: 830px) {
+        font-size: 1.5em;
+    }
+    &:focus *{
+        background: $focus;
+        outline: 2px solid $focus;
     }
 }
 
@@ -37,5 +64,8 @@
     font-size: 1.1em;
     strong{
         margin-right: 5px;
+    }
+    @media screen and (min-width: 830px) {
+        font-size: 1.2em;
     }
 }

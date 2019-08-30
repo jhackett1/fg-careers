@@ -32,4 +32,8 @@
         background: $pink;
         color: $white;
     }
+    &:focus{
+        outline: none;
+        box-shadow: 0px 0px 0px 4px $focus;
+    }
 }
