@@ -5,6 +5,7 @@ Django==2.2.4
 django-appconf==1.0.3
 django-compressor==2.3
 django-modelcluster==4.4
+django-sass-processor==0.7.3
 django-taggit==0.24.0
 django-treebeard==4.3
 djangorestframework==3.10.2
@@ -13,6 +14,7 @@ html5lib==1.0.1
 idna==2.8
 libsass==0.19.2
 Pillow==5.4.1
+psycopg2==2.8.3
 pytz==2019.2
 rcssmin==1.0.6
 requests==2.22.0
