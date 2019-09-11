@@ -10,3 +10,4 @@ dist
 *.pyc
 *.swp
 *.env
+latest.dump
