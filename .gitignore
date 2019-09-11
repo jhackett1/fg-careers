@@ -3,3 +3,9 @@ db.sqlite3
 node_modules
 dist
 .cache
+
+.vscode
+
+.DS_Store
+*.pyc
+*.swp
