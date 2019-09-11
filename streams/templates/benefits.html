@@ -5,11 +5,14 @@
         </div>
 
         <div class="benefits__column">
-            <ul class="benefits__list">
+            <ul class="benefits__list" aria-live="polite">
                 {% for benefit in value.benefits %}
                     <div class="benefits__benefit">
-                        <h3 class="benefits__benefit-crosshead">{{benefit.crosshead}}</h3>
-                        <div class="benefits__benefit-content">{{benefit.content}}</div>
+                        <button class="benefits__button">
+                            <h3 class="benefits__benefit-crosshead">{{benefit.crosshead}}</h3>
+                        </button>
+
+                        <div class="benefits__benefit-content" hidden>{{benefit.content}}</div>
                     </div>
                 {% endfor %}
             </ul>

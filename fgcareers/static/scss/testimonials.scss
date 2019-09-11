@@ -1,64 +1,132 @@
-.testimonials__testimonial{
-    height: 100vh;
+.testimonials{
+    background: $purple;
+    color: $white;
+    padding: 50px 40px;
     position: relative;
     overflow: hidden;
     &:before{
         content: "";
         display: block;
         position: absolute;
-        bottom: 0;
+        top: 0;
         left: 0;
-        height: 70%;
+        height: 100%;
         width: 100%;
         background-size: cover;
         background-position: center;
-        background-image: url('../hero.jpg');
-        opacity: 0.5;
+        background-image: url('../testimonials_bg.jpg');
+        background-attachment: fixed;
+        opacity: 0.1;
     }
-    &:after{
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 70%;
-        width: 100%;
-        background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
+    @media screen and (min-width: 830px) {
+        padding: 100px 10%;
+    }
+    @media screen and (min-width: 1300px) {
+        padding: 100px 20%;
     }
 
-    &:nth-of-type(1){
-        background: $pink;
-        color: $white;
-        &:after{
-            background: linear-gradient(0deg, transparentize($pink, 1) 0%, $pink 100%);
-        }
-        &:before{
-            background-image: url('../benefits_bg.jpg');
-        }
+}
+
+.testimonials__headline{
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (min-width: 830px) {
+        font-size: 2em;
     }
-    &:nth-of-type(3){
-        background: $purple;
-        color: $white;
-        &:after{
-            background: linear-gradient(0deg, transparentize($purple, 1) 0%, $purple 100%);
-        }
+    @media screen and (min-width: 1300px) {
+        font-size: 2.4em;
+    }
+}
+
+.testimonials__testimonial{
+    padding: 0px 10px;
+    @media screen and (min-width: 830px) {
+        padding: 0px 30px;
+    }
+}
+
+.testimonials__testimonial-inner{
+    overflow: hidden;
+    height: 100%;
+    background: white;
+    display: block;
+    box-shadow: 2px 0px 5px transparentize($purple, 0.8);
+    @media screen and (min-width: 830px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+.testimonials__image{
+    height: auto;
+    width: 100%;
+    background: $pink;
+    @media screen and (min-width: 830px) {
+        width: 50%;
+        object-fit: cover;
     }
 }
 
 .testimonials__quote-holder{
-    padding: 50px 20px;
-    position: relative;
-    z-index: 2;
+    color: $text;
+    padding: 25px;
+    flex: 1;
+    @media screen and (min-width: 830px) {
+        padding: 35px;
+    }
+    flex: 1;
+    @media screen and (min-width: 1300px) {
+        padding: 55px;
+    }
 }
 
 .testimonials__quote{
-    display: block;
-    font-size: 1.3em;
-    margin-bottom: 15px;
+    font-size: 1em;
+    @media screen and (min-width: 830px) {
+        font-size: 1.1em;
+    }
+    @media screen and (min-width: 1300px) {
+        font-size: 1.4em;
+    }
 }
 
 .testimonials__name{
-    display: block;
-    font-weight: bold;
     font-size: 1.5em;
+    font-weight: bold;
+    display: block;
+    margin-top: 25px;
+    @media screen and (min-width: 830px) {
+        font-size: 1.7em;
+    }
+}
+.testimonials__role{
+    color: $grey;
+    display: block;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+
+
+.slick-list{
+    overflow: visible !important;
+}
+
+.slick-slide{
+    &:focus{
+        outline: none;
+        .testimonials__testimonial-inner{
+            outline: 3px solid $focus;
+        }
+    }
+}
+
+.slick-dots{
+    bottom: -35px;
+}
+
+.slick-dots li button:before,
+.slick-dots li.slick-active button:before{
+    color: white;
+    font-size: 12px;
 }

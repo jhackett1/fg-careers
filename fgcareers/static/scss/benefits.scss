@@ -30,6 +30,9 @@
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 40px;
     }
+    @media screen and (min-width: 1300px) {
+        grid-column-gap: 70px;
+    }
 }
 
 .benefits__headline{
@@ -38,57 +41,95 @@
     @media screen and (min-width: 830px) {
         font-size: 2em;
     }
+    @media screen and (min-width: 1300px) {
+        font-size: 2.4em;
+    }
 }
 
 .benefits-list{
     list-style: none;
 }
 
+.benefits__benefit{
+    margin-bottom: 20px;
+    @media screen and (min-width: 1300px) {
+        margin-bottom: 30px;
+    }
+    &.benefits__benefit--open{
+        .benefits__button{
+            &:after{
+                background-image: url("../minus.svg");
+            }
+        }
+    }
+}
 
-// .benefits__grid{
-//     @media screen and (min-width: 830px) {
-//         display: grid;
-//         grid-template-columns: 1fr 1fr 1fr;
-//         grid-column-gap: 40px;
-//     }
-//     @media screen and (min-width: 1200px) {
-//         grid-column-gap: 60px;
-//     }
-// }
-
-// .benefits__headline{
-//     margin-bottom: 30px;
-//     font-size: 2em;
-//     position: relative;
-//     z-index: 2;
-//     @media screen and (min-width: 830px){
-//         font-size: 3em;
-//         max-width: calc(50% - 20px);
-//         margin-bottom: 50px;
-//     }
-//     @media screen and (min-width: 1200px){
-//         font-size: 3.5em;
-//     }
-// }
-
-// .benefits__benefit{
-//     margin-bottom: 35px;
-//     position: relative;
-//     z-index: 2;
-// }
+.benefits__button{
+    width: 100%;
+    background: none;
+    border: none;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+    @media screen and (min-width: 1300px) {
+        margin-bottom: 20px;
+    }
+    &:before{
+        content: "";
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        margin-right: 20px;
+        background-repeat: no-repeat;
+        background-image: url("../tick.svg");
+        background-size: contain;
+        background-position: center;
+    }
+    &:after{
+        margin-left: auto;
+        content: "";
+        display: inline-block;
+        height: 18px;
+        width: 18px;
+        background-repeat: no-repeat;
+        background-image: url("../plus.svg");
+        background-size: contain;
+        background-position: center;
+    }
+    &.benefits__button--open{
+        pointer-events: none;
+    }
+}
 
 .benefits__benefit-crosshead{
-    font-size: 1.4em;
-    margin-bottom: 5px;
+    font-size: 1.5em;
+    margin-bottom: 0px;
     @media screen and (min-width: 830px) {
         font-size: 1.7em;
-        margin-bottom: 10px;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
     }
 }
 
 .benefits__benefit-content{
     font-size: 1.1em;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 10px;
+    animation: fadeIn 0.5s ease-out;
     @media screen and (min-width: 830px) {
-        font-size: 1.2em;
+        font-size: 1.4em;
     }
 }
