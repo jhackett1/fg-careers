@@ -1,1 +1,0 @@
-web: gunicorn fgcareers.wsgi --log-file -
