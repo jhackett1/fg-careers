@@ -15,7 +15,7 @@
         width: 100%;
         background-size: cover;
         background-position: bottom;
-        background-image: url('/static/hero.jpg');
+        background-image: url("../hero.jpg");
         opacity: 0.2;
     }
     @media screen and (min-width: 830px){

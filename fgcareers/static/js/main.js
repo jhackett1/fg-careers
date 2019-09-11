@@ -1,1 +1,3 @@
-alert("js is loading")
+import "../scss/_style.scss"
+
+console.log("doob")

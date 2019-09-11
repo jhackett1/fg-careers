@@ -1,4 +1,4 @@
-{% load static wagtailuserbar sass_tags %}
+{% load static wagtailuserbar %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -16,9 +16,9 @@
         </title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="/static/dist/main.css"/>
+        <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css"/>
 
-        <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css">
-        <link rel="stylesheet" type="text/css" href="{% sass_src 'css/_style.scss' %}">
         {% block extra_css %}{% endblock %}
 
     </head>
@@ -33,6 +33,7 @@
             <p>© FutureGov 2019  Registered Company No. 6472420</p>
         </footer>
 
+        <script src="/static/dist/main.js"></script>
         {% block extra_js %}{% endblock %}
     </body>
 </html>

@@ -4,7 +4,8 @@
   "description": "A plain wagtail site.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel watch fgcareers/static/js/main.js --out-dir fgcareers/static/dist --public-url /static/dist",
+    "build": "parcel build fgcareers/static/js/main.js --out-dir fgcareers/static/dist --public-url /static/dist"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wearefuturegov/fg-careers/issues"
   },
-  "homepage": "https://github.com/wearefuturegov/fg-careers#readme"
+  "homepage": "https://github.com/wearefuturegov/fg-careers#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
