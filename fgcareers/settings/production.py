@@ -1,17 +1,18 @@
-from __future__ import absolute_import, unicode_literals
+# from __future__ import absolute_import, unicode_literals
 from .base import *
-import dj_database_url
-import os
 
-env = os.environ.copy()
+# import dj_database_url
+# import os
 
-SECRET_KEY = env['SECRET_KEY']
+# env = os.environ.copy()
 
-DATABASES['default'] = dj_database_url.config()
+# SECRET_KEY = env['SECRET_KEY']
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO' , 'https')
+# DATABASES['default'] = dj_database_url.config()
 
-ALLOWED_HOSTS = ['*']
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARD_PROTO' , 'https')
+
+# ALLOWED_HOSTS = ['*']
 
 DEBUG = False
 
@@ -19,3 +20,7 @@ try:
     from .local import *
 except ImportError:
     pass
+
+
+import django_heroku
+django_heroku.settings(locals())
