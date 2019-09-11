@@ -11,7 +11,9 @@ Make sure `python3`, `pip` and `pipenv` are installed
 
 3. If running for the first time, run `pip install -r requirements.txt`, `python manage.py migrate` and `python manage.py createsuperuser`
 
-4. Run it with `python manage.py runserver`p
+4. Run it with `python manage.py runserver`
+
+5. If you want to compile sass and JS, run `npm i` and then `npm run dev` in a separate terminal.
 
 
 ## Sass

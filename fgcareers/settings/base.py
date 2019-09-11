@@ -29,8 +29,6 @@ INSTALLED_APPS = [
     'vacancy',
     'streams',
 
-    # Compile sass
-    'sass_processor',
     # Activate admin UI style guide
     'wagtail.contrib.styleguide',
 
@@ -142,8 +140,7 @@ USE_TZ = True
 
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'sass_processor.finders.CssFinder'
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 ]
 
 STATICFILES_DIRS = [
