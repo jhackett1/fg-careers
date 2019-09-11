@@ -103,7 +103,7 @@ WSGI_APPLICATION = 'fgcareers.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backbends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'fgcareers_db',
     }
 }
