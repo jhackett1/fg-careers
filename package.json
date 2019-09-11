@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/wearefuturegov/fg-careers#readme",
   "devDependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "sass": "^1.23.0-module.beta.1"
   },
   "dependencies": {
     "jquery": "^3.4.1",
