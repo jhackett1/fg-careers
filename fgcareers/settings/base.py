@@ -166,3 +166,6 @@ WAGTAIL_SITE_NAME = "fgcareers"
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 BASE_URL = 'http://example.com'
 
+
+import django_heroku
+django_heroku.settings(locals())
