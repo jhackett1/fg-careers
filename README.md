@@ -15,6 +15,13 @@ Make sure `python3`, `pip` and `pipenv` are installed
 
 5. If you want to compile sass and JS, run `npm i` and then `npm run dev` in a separate terminal.
 
+## psycopg2
+
+If you run into trouble installing psycopg2 on OSX:
+
+`sudo installer -pkg /Library/Developer/CommandLineTools/Packages/macOS_SDK_headers_for_macOS_10.14.pkg -target /`
+
+[StackOverflow explanation](https://stackoverflow.com/questions/34304833/failed-building-wheel-for-psycopg2-macosx-using-virtualenv-and-pip)
 
 ## Sass
 
