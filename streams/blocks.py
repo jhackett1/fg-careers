@@ -3,6 +3,8 @@ from wagtail.images.blocks import ImageChooserBlock
 
 class TextBlock(blocks.StructBlock):
     headline = blocks.CharBlock(max_length=200)
+    sticky_headline = blocks.BooleanBlock(required=False)
+    left_content = blocks.TextBlock(required=False)
     content = blocks.RichTextBlock(features=['h3', 'bold', 'italic', 'link', 'ol', 'ul', 'embed'])
     large_text = blocks.BooleanBlock(required=False)
     class Meta:

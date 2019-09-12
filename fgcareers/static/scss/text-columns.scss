@@ -29,6 +29,10 @@
     @media screen and (min-width: $large) {
         font-size: 2.4em;
     }
+    &.text-columns__headline--sticky{
+        position: sticky;
+        top: 100px;
+    }
 }
 
 
