@@ -1,0 +1,46 @@
+.key-stats{
+    background: $background;
+    padding: 50px 20px;
+    text-align: center;
+    @media screen and (min-width: $medium) {
+        padding: 100px 10%;
+    }
+    @media screen and (min-width: $large) {
+        padding: 100px 15%;
+    }
+}
+
+.key-stats__inner{
+    @media screen and (min-width: $medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.key-stats__stat{
+    margin-bottom: 30px;
+    &:last-of-type{
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width: $medium){
+        margin-bottom: 0px;
+    }
+}
+
+.key-stats__label{
+    font-size: 1em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    @media screen and (min-width: $medium){
+        font-size: 1.2em;
+    }
+}
+
+.key-stats__value{
+    font-size: 1.5em;
+    @media screen and (min-width: $medium){
+        font-size: 2em;
+    }
+}

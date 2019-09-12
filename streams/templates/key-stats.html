@@ -1,0 +1,10 @@
+<section class="key-stats">
+    <dl class="key-stats__inner container">
+        {% for stat in value.stats %}
+            <div class="key-stats__stat">
+                <dd class="key-stats__label">{{ stat.label }} </dd>
+                <dt class="key-stats__value">{{ stat.value }}</dt>
+            </div>
+        {% endfor %}
+    </dl>
+</section>
