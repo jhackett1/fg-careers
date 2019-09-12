@@ -33,6 +33,11 @@
     p, br{
         margin-bottom: 15px;
     }
+
+    font-size: 1.1em;
+    @media screen and (min-width: $medium) {
+        font-size: 1.2em;
+    }
     
 }
 

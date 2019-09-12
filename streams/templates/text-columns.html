@@ -2,7 +2,7 @@
     <div class="container text-columns__inner">
         <div class="text-columns__column">
             <h2 class="text-columns__headline">{{ value.headline }}</h2></div>
-        <div class="text-columns__column text-columns__content text-columns__content--large">
+        <div class="text-columns__column text-columns__content {% if value.large_text %}text-columns__content--large{% endif %}">
             {{ value.content }}
         </div>
     </div>

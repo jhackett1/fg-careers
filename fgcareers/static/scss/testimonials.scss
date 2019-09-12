@@ -72,23 +72,27 @@
     color: $text;
     padding: 25px;
     flex: 1;
+    font-size: 1em;
     @media screen and (min-width: $medium) {
         padding: 35px;
     }
-    flex: 1;
     @media screen and (min-width: $large) {
         padding: 55px;
     }
 }
 
 .testimonials__quote{
-    font-size: 1em;
+    font-size: 1.2em;
     @media screen and (min-width: $medium) {
-        font-size: 1.1em;
+        font-size: 1.4em;
     }
-    @media screen and (min-width: $large) {
-        font-size: 1.3em;
-    }
+    // font-size: 1em;
+    // @media screen and (min-width: $medium) {
+    //     font-size: 1.1em;
+    // }
+    // @media screen and (min-width: $large) {
+    //     font-size: 1.3em;
+    // }
 }
 
 .testimonials__name{
