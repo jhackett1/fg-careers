@@ -7,6 +7,9 @@
     @media screen and (min-width: $large) {
         padding: 100px 15%;
     }
+    &:nth-of-type(even){
+        background-color: $background;
+    }
 }
 
 .text-columns__inner{
