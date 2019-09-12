@@ -4,7 +4,7 @@ from wagtail.images.blocks import ImageChooserBlock
 class TextBlock(blocks.StructBlock):
     headline = blocks.CharBlock(max_length=200)
     content = blocks.RichTextBlock(features=['h3', 'bold', 'italic', 'link', 'ol', 'ul', 'embed'])
-    large_text = blocks.BooleanBlock()
+    large_text = blocks.BooleanBlock(required=False)
     class Meta:
         icon = "doc-full-inverse"
         label = "Text"
@@ -62,7 +62,7 @@ class PersonCardsBlock(blocks.StructBlock):
 class CallToActionBlock(blocks.StructBlock):
     headline = blocks.CharBlock(max_length=200)
     content = blocks.RichTextBlock(features=['bold', 'italic', 'link'])
-    large_text = blocks.BooleanBlock()
+    large_text = blocks.BooleanBlock(required=False)
     button_destination = blocks.URLBlock()
     button_label = blocks.CharBlock(max_length=30)
     class Meta:
