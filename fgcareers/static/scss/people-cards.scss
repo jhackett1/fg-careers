@@ -6,6 +6,9 @@
     @media screen and (min-width: $medium) {
         padding: 100px 10%;
     }
+    @media screen and (min-width: $large) {
+        padding: 100px 15%;
+    }
 }
 
 .people-grid__headline{
