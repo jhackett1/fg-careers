@@ -23,21 +23,22 @@
     }
 }
 
+.text-columns__sticky{
+    position: sticky;
+    top: 100px;
+}
+
 .text-columns__headline{
     margin-bottom: 15px;
     font-size: 1.7em;
     @media screen and (min-width: $medium) {
         font-size: 2em;
+        max-width: 85%;
     }
     @media screen and (min-width: $large) {
         font-size: 2.4em;
     }
-    &.text-columns__headline--sticky{
-        position: sticky;
-        top: 100px;
-    }
 }
-
 
 .text-columns__content{
     p, br{
@@ -48,6 +49,14 @@
     @media screen and (min-width: $medium) {
         font-size: 1.2em;
     }
+
+    ol, ul{
+        margin-left: 25px;
+    }
+    li{
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
     
 }
 
@@ -56,4 +65,12 @@
     @media screen and (min-width: $medium) {
         font-size: 1.4em;
     }
+}
+
+.text-columns__left-content{
+    display: none;
+    color: $grey;
+    @media screen and (min-width: $medium) {
+        display: block;
+    }  
 }

@@ -1,12 +1,16 @@
 <section class="text-columns">
     <div class="container text-columns__inner">
         <div class="text-columns__column">
-            <h2 class="text-columns__headline {% if value.sticky_headline %}text-columns__headline--sticky{% endif %}">
-                {{ value.headline }}
-            </h2>
-            {% if value.left_content %}
-                <p class="text-columns__left-content">{{ value.left_content }}</p>
-            {% endif %}
+            {% if value.sticky_headline %}<div class="text-columns__sticky">{% endif %}
+
+                <h2 class="text-columns__headline">
+                    {{ value.headline }}
+                </h2>
+                {% if value.left_content %}
+                    <p class="text-columns__left-content">{{ value.left_content }}</p>
+                {% endif %}
+
+            {% if value.sticky_headline %}</div>{% endif %}
         </div>
         <div class="text-columns__column text-columns__content {% if value.large_text %}text-columns__content--large{% endif %}">
             {{ value.content }}
