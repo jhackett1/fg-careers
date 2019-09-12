@@ -32,6 +32,7 @@ class VacanciesBlock(blocks.StaticBlock):
 
 
 class TestimonialsBlock(blocks.StructBlock):
+    headline = blocks.CharBlock(max_length=200)
     testimonials = blocks.ListBlock(blocks.StructBlock([
         ('quotation', blocks.TextBlock()),
         ('attribution_name', blocks.CharBlock()),

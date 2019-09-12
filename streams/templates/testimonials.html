@@ -1,7 +1,7 @@
 {% load wagtailimages_tags %}
 
 <section class="testimonials">
-    <h2 class="testimonials__headline">Meet FutureGov-ers</h2>
+    <h2 class="testimonials__headline">{{value.headline}}</h2>
     <div class="testimonials__list">
         {% for testimonial in value.testimonials %}
             <div class="testimonials__testimonial">
