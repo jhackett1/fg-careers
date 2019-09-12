@@ -39,6 +39,9 @@ Django = "==2.2.4"
 Pillow = "==5.4.1"
 Unidecode = "==1.1.1"
 Willow = "==1.1"
+django-storages = "*"
+boto = "*"
+boto3 = "*"
 
 [requires]
 python_version = "3.7"
