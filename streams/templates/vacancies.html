@@ -4,6 +4,7 @@
                 <h2 class="vacancies__headline">Current vacancies</h2>
             </div>
             <div class="vacancies__column">
+                {% if page.get_children %}
                 <ul class="vacancy-list">
                     {% for vacancy in page.get_children %}
                         <li class="vacancy-list__vacancy">
@@ -14,6 +15,9 @@
                         </li>
                     {% endfor %}
                 </ul>
+                {% else %}
+                <p class="vacancies__no-vacancies">We aren't recruiting for any specific vacancies right now. Please check back soon!</p>
+                {% endif %}
             </div>
         </div>
     </section>

@@ -18,10 +18,10 @@
         background-attachment: fixed;
         opacity: 0.1;
     }
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         padding: 100px 10%;
     }
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: $large) {
         padding: 100px 20%;
     }
 
@@ -30,17 +30,17 @@
 .testimonials__headline{
     margin-bottom: 30px;
     text-align: center;
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         font-size: 2em;
     }
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: $large) {
         font-size: 2.4em;
     }
 }
 
 .testimonials__testimonial{
     padding: 0px 10px;
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         padding: 0px 30px;
     }
 }
@@ -51,7 +51,7 @@
     background: white;
     display: block;
     box-shadow: 2px 0px 5px transparentize($purple, 0.8);
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         display: flex;
         flex-direction: row;
     }
@@ -62,7 +62,7 @@
     height: auto;
     width: 100%;
     background: $pink;
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         width: 50%;
         object-fit: cover;
     }
@@ -72,22 +72,22 @@
     color: $text;
     padding: 25px;
     flex: 1;
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         padding: 35px;
     }
     flex: 1;
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: $large) {
         padding: 55px;
     }
 }
 
 .testimonials__quote{
     font-size: 1em;
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         font-size: 1.1em;
     }
-    @media screen and (min-width: 1500px) {
-        font-size: 1.4em;
+    @media screen and (min-width: $large) {
+        font-size: 1.3em;
     }
 }
 
@@ -96,7 +96,7 @@
     font-weight: bold;
     display: block;
     margin-top: 25px;
-    @media screen and (min-width: 830px) {
+    @media screen and (min-width: $medium) {
         font-size: 1.7em;
     }
 }
