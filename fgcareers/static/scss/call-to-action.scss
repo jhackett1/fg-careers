@@ -39,11 +39,19 @@
 }
 
 .call-to-action .rich-text{
+    font-size: 1.1em;
+    @media screen and (min-width: $medium) {
+        font-size: 1.2em;
+    }
+
+    margin-bottom: 25px;
+}
+
+.call-to-action__content--large{
     font-size: 1.2em;
     @media screen and (min-width: $medium) {
         font-size: 1.4em;
     }
-    margin-bottom: 25px;
 }
 
 .call-to-action__button{
