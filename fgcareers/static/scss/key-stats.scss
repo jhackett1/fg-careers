@@ -14,7 +14,7 @@
 }
 
 .key-stats__inner{
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: 600px) {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -27,7 +27,7 @@
     &:last-of-type{
         margin-bottom: 0px;
     }
-    @media screen and (min-width: $medium){
+    @media screen and (min-width: 600px){
         margin-bottom: 0px;
     }
 }

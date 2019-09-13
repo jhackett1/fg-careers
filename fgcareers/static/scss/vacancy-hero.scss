@@ -1,0 +1,52 @@
+.vacancy-hero{
+    padding: 80px 20px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("../hero.jpg");
+    position: relative;
+    overflow: hidden;
+    @media screen and (min-width: $medium){
+        padding: 120px 10%;
+    }
+    @media screen and (min-width: $large){
+        padding: 140px 15%;
+    }
+}
+
+.vacancy-hero__box{
+    background: transparentize($pink, 0.1);
+    max-width: 95%;
+    color: $white;
+    padding: 20px;
+    width: auto;
+    @media screen and (min-width: 600px){
+        max-width: 50%;
+    }
+    @media screen and (min-width: $medium){
+        padding: 25px;
+    }
+}
+
+.vacancy-hero__headline{
+    font-size: 2.2em;
+    z-index: 2;
+    line-height: 1.1;
+    position: relative;
+    @media screen and (min-width: $medium){
+        font-size: 3em;
+    }
+    @media screen and (min-width: 1200px){
+        font-size: 4em;
+    }
+}
+
+.vacancy-hero__caption{
+    font-size: 1.3em;
+    margin-bottom: 5px;
+    @media screen and (min-width: $medium){
+        font-size: 1.5em;
+    }
+    @media screen and (min-width: $large){
+        font-size: 1.6em;
+    }
+}
