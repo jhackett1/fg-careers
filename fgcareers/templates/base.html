@@ -14,13 +14,13 @@
                 {% endwith %}
             {% endblock %}
         </title>
+        <link rel="icon" href="/static/favicon.png">
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="/static/dist/main.css"/>
         <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css"/>
-
+        {% include 'partials/social-meta.html' %}
         {% block extra_css %}{% endblock %}
-
     </head>
 
     <body class="{% block body_class %}{% endblock %}">
