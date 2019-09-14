@@ -6,6 +6,7 @@ $background: #f4f2f3;
 $white: #ffffff;
 $focus: #ffc603;
 
+$sm: 600px;
 $medium: 830px;
 $large: 1500px;
 
@@ -46,3 +47,4 @@ p, q, li{
 @import "footer";
 @import "key-stats";
 @import "vacancy-hero";
+@import "case-studies";

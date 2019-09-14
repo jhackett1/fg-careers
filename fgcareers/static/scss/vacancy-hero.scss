@@ -4,6 +4,9 @@
     background-position: bottom;
     position: relative;
     overflow: hidden;
+    @media screen and (min-width: $sm) {
+        padding: 80px 10%;
+    }
     @media screen and (min-width: $medium){
         padding: 120px 10%;
     }
@@ -13,13 +16,14 @@
 }
 
 .vacancy-hero__box{
+    display: inline-block;
     background: transparentize($pink, 0.1);
-    max-width: 95%;
+    max-width: 85%;
     color: $white;
     padding: 20px;
     width: auto;
     @media screen and (min-width: 600px){
-        max-width: 50%;
+        max-width: 40%;
     }
     @media screen and (min-width: $medium){
         padding: 25px;

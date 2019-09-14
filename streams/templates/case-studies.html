@@ -1,0 +1,21 @@
+{% load wagtailimages_tags %}
+
+<section class="case-studies">
+    <div class="case-studies__inner">
+        <h2 class="case-studies__section-headline">Case studies</h2>
+        <ul>
+            {% for case_study in value.case_studies %}
+                <li class="case-studies__case-study">
+                    <a href="{{ case_study.destination }}">
+                        {% image case_study.image fill-600x400 class="case_study__image" %}
+                        <h3 class="case_studies__headline">
+                            <span class="case_studies__slugline">{{ case_study.headline}}</span>
+                            {{ case_study.slugline }}
+                        </h3>
+                        <p class="case_studies__kicker">{{ case_study.kicker }}</p>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

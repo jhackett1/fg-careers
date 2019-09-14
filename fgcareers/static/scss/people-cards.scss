@@ -3,6 +3,9 @@
     padding: 50px 20px;
     color: $text;
     text-align: center;
+    @media screen and (min-width: $sm) {
+        padding: 50px 10%;
+    }
     @media screen and (min-width: $medium) {
         padding: 100px 10%;
     }

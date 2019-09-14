@@ -1,6 +1,9 @@
 .vacancies{
     padding: 100px 20px;
     color: $text;
+    @media screen and (min-width: $sm) {
+        padding: 100px 10%;
+    }
     @media screen and (min-width: $medium) {
         padding: 150px 10%;
     }
