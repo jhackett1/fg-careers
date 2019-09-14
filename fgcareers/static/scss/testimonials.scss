@@ -30,6 +30,8 @@
 .testimonials__headline{
     margin-bottom: 30px;
     text-align: center;
+    position: relative;
+    z-index: 1;
     @media screen and (min-width: $medium) {
         font-size: 2em;
     }
