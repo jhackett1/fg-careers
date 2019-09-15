@@ -100,6 +100,7 @@
         display: inline-block;
         height: 18px;
         width: 18px;
+        flex-shrink: 0;
         background-repeat: no-repeat;
         background-image: url("../plus.svg");
         background-size: contain;
