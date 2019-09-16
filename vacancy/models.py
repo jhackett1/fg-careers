@@ -23,8 +23,9 @@ class VacancyPage(Page):
         help_text="test"
     )
     team = models.CharField(max_length=100, null=True, blank=False)
-    location = models.CharField(max_length=100, null=True, blank=False)
-    salary = models.CharField(max_length=100, null=True, blank=False)
+    closing_date = models.DateField(null=True, blank=True)
+    # location = models.CharField(max_length=100, null=True, blank=False)
+    # salary = models.CharField(max_length=100, null=True, blank=False)
     content = StreamField(
         [
             ("text", blocks.TextBlock()),
@@ -40,8 +41,9 @@ class VacancyPage(Page):
         ImageChooserPanel("hero_image"),
         MultiFieldPanel([FieldRowPanel([
             FieldPanel("team"),
-            FieldPanel("location"),
-            FieldPanel("salary")
+            FieldPanel("closing_date")
+            # FieldPanel("location"),
+            # FieldPanel("salary")
         ])], "Key vacancy info"),
         StreamFieldPanel("content")
     ]

@@ -17,6 +17,9 @@
         background-attachment: fixed;
         opacity: 0.1;
     }
+    @media screen and (min-width: $sm) {
+        padding: 100px 10%;
+    }
     @media screen and (min-width: $medium) {
         padding: 100px 10%;
     }

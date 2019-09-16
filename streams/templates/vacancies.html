@@ -6,12 +6,12 @@
             <div class="vacancies__column">
                 {% if page.get_children %}
                 <ul class="vacancy-list">
-                    {% for vacancy in page.get_children %}
+                    {% for vacancy in page.get_children.specific %}
                         <li class="vacancy-list__vacancy">
                             <a href="{{ vacancy.url }}" class="vacancy-list__link">
                                 <h3 class="vacancy-list__headline">{{ vacancy.title }}</h3>
                             </a>
-                            <p class="vacancy-list__meta"><strong>Design team</strong> Closes 1st September 2019</p>
+                            <p class="vacancy-list__meta"><strong>{{ vacancy.team }} team</strong>{% if vacancy.closing_date %} Closes {{ vacancy.closing_date|date:"d F" }}{% endif %}</p>
                         </li>
                     {% endfor %}
                 </ul>

@@ -3,8 +3,6 @@
 {% load wagtailimages_tags %}
 {% block content %}
 
-{{ page.hero_image.url }}
-
 {% image page.hero_image width-1920 as hero %}
 
 <section class="vacancy-hero" style="background-image: url({{ hero.url }})">
