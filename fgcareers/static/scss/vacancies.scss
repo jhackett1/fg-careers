@@ -15,7 +15,7 @@
 .vacancies__inner{
     @media screen and (min-width: $medium) {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 3fr 4fr;
         grid-column-gap: 40px;
     }
     @media screen and (min-width: $large) {
