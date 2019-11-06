@@ -3,9 +3,9 @@
 {% load wagtailimages_tags %}
 {% block content %}
 
-{% image page.hero_image width-1920 as hero %}
+{% image page.preview_image width-1920 as preview %}
 
-<section class="vacancy-hero" style="background-image: url({{ hero.url }})">
+<section class="vacancy-hero" style="background-image: url({{ preview.url }})">
     <div class="vacancy-hero__inner">
         <div class="vacancy-hero__box">
             <p class="vacancy-hero__caption">Vacancy</p>

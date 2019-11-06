@@ -36,6 +36,9 @@ class HomePage(Page):
     )
 
     content_panels = Page.content_panels + [
-        ImageChooserPanel("preview_image"),
         StreamFieldPanel("content")
+    ]
+
+    promote_panels = Page.promote_panels + [
+        ImageChooserPanel("preview_image")
     ]

@@ -14,13 +14,13 @@ class VacancyPage(Page):
         "home.HomePage"
     ]
 
-    hero_image = models.ForeignKey(
+    preview_image = models.ForeignKey(
         "wagtailimages.Image",
         null=True,
         blank=False,
         on_delete=models.SET_NULL,
         related_name="+",
-        help_text="test"
+        help_text="This image appears at the top of the page and in social media previews."
     )
     team = models.CharField(max_length=100, null=True, blank=False)
     closing_date = models.DateField(null=True, blank=True)
@@ -38,7 +38,7 @@ class VacancyPage(Page):
     )
 
     content_panels = Page.content_panels + [
-        ImageChooserPanel("hero_image"),
+        ImageChooserPanel("preview_image"),
         MultiFieldPanel([FieldRowPanel([
             FieldPanel("team"),
             FieldPanel("closing_date")
@@ -46,4 +46,8 @@ class VacancyPage(Page):
             # FieldPanel("salary")
         ])], "Key vacancy info"),
         StreamFieldPanel("content")
+    ]
+
+    promote_panels = Page.promote_panels + [
+        ImageChooserPanel("preview_image")
     ]
