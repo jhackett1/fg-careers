@@ -1,9 +1,12 @@
 {% load static wagtailuserbar %}
+{% load wagtailimages_tags %}
+{% image page.preview_image width-800 as preview %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
     <head>
         <meta charset="utf-8" />
+        
         <title>
             {% block title %}
                 {% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %}
@@ -14,12 +17,30 @@
                 {% endwith %}
             {% endblock %}
         </title>
+
         <link rel="icon" href="/static/favicon.png">
-        <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="/static/dist/main.css"/>
         <link rel="stylesheet" href="https://use.typekit.net/wsk4rpc.css"/>
-        {% include 'partials/social-meta.html' %}
+
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://medium.com/feed/@futuregov" />
+
+        <meta content='We&#39;re always looking for people who are passionate about making public services better.' name='description'>
+        <meta content='FutureGov, Service design, design, Innovation, Digital, Organisation design, change management, Local Government, Localgov, Government, ' property='tags'>
+        
+        <meta content='FutureGov' property='og:site_name'>
+        <meta content='{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %} Careers at FutureGov' property='og:title'>
+        <meta content='https://careers.wearefuturegov.com' property='og:url'>
+        <meta content='{{ preview.url }}' property='og:image'>
+        <meta content='We&#39;re always looking for people who are passionate about making public services better.' property='og:description'>
+        
+        <meta content='summary' property='twitter:card'>
+        <meta content='@wearefuturegov' property='twitter:site'>
+        <meta content='{% if self.seo_title %}{{ self.seo_title }}{% else %}{{ self.title }}{% endif %} Careers at FutureGov' property='twitter:title'>
+        <meta content='We&#39;re always looking for people who are passionate about making public services better.' property='twitter:description'>
+        <meta content='{{ preview.url }}' property='twitter:image'>
+        <meta content='https://careers.wearefuturegov.com' property='twitter:url'>
+
         {% block extra_css %}{% endblock %}
     </head>
 

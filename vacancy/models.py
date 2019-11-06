@@ -38,12 +38,9 @@ class VacancyPage(Page):
     )
 
     content_panels = Page.content_panels + [
-        ImageChooserPanel("preview_image"),
         MultiFieldPanel([FieldRowPanel([
             FieldPanel("team"),
             FieldPanel("closing_date")
-            # FieldPanel("location"),
-            # FieldPanel("salary")
         ])], "Key vacancy info"),
         StreamFieldPanel("content")
     ]
