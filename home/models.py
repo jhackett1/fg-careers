@@ -11,13 +11,13 @@ class HomePage(Page):
     template = "home_page.html"
     max_count = 1
 
-    hero_image = models.ForeignKey(
+    preview_image = models.ForeignKey(
         "wagtailimages.Image",
         null=True,
         blank=False,
         on_delete=models.SET_NULL,
         related_name="+",
-        help_text="test"
+        help_text="This image appears in social media previews, but not on the page itself"
     )
     content = StreamField(
         [
@@ -36,6 +36,6 @@ class HomePage(Page):
     )
 
     content_panels = Page.content_panels + [
-        ImageChooserPanel("hero_image"),
+        ImageChooserPanel("preview_image"),
         StreamFieldPanel("content")
     ]

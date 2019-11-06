@@ -15,7 +15,7 @@ class TextBlock(blocks.StructBlock):
 
 class BenefitsBlock(blocks.StructBlock):
     headline = blocks.CharBlock(max_length=200)
-    image = ImageChooserBlock()
+    # image = ImageChooserBlock()
     benefits = blocks.ListBlock(blocks.StructBlock([
         ('crosshead', blocks.CharBlock()),
         ('content', blocks.RichTextBlock(features=['h3', 'bold', 'italic', 'link', 'ol', 'ul', 'embed'])),
