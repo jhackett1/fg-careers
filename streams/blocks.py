@@ -65,7 +65,7 @@ class CallToActionBlock(blocks.StructBlock):
     headline = blocks.CharBlock(max_length=200)
     content = blocks.RichTextBlock(features=['bold', 'italic', 'link'])
     large_text = blocks.BooleanBlock(required=False)
-    button_destination = blocks.URLBlock()
+    button_destination = blocks.CharBlock()
     button_label = blocks.CharBlock(max_length=30)
     class Meta:
         icon = "tick"
