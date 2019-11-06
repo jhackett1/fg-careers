@@ -10,6 +10,15 @@
     @media screen and (min-width: $large) {
         padding: 100px 15%;
     }
+    a{
+        color: $pink;
+        &:hover{
+            text-decoration: none;
+        }
+        &:focus{
+            background: $focus;
+        }
+    }
 }
 
 .not-found__headline{
@@ -22,8 +31,4 @@
     @media screen and (min-width: $large) {
         font-size: 2.4em;
     }
-}
-
-.not-found__headline{
-    margin-bottom: 10px;
 }
