@@ -4,4 +4,16 @@
     text-align: center;
     color: transparentize($grey, 0.5);
     font-size: 0.9em;
+
+    a{
+        color: $grey;
+        text-decoration: none;
+        &:hover{
+            text-decoration: underline;
+        }
+        &:focus{
+            background: $focus;
+        }
+    }
+
 }
