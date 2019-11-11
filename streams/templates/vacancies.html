@@ -4,9 +4,9 @@
                 <h2 class="vacancies__headline">Current vacancies</h2>
             </div>
             <div class="vacancies__column">
-                {% if page.get_children %}
+                {% if vacancies %}
                 <ul class="vacancy-list">
-                    {% for vacancy in page.get_children.specific %}
+                    {% for vacancy in vacancies %}
                         <li class="vacancy-list__vacancy">
                             <a href="{{ vacancy.url }}" class="vacancy-list__link">
                                 <h3 class="vacancy-list__headline">{{ vacancy.title }}</h3>
