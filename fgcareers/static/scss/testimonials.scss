@@ -17,6 +17,7 @@
         background-image: url('../testimonials_bg.jpg');
         background-attachment: fixed;
         opacity: 0.1;
+        filter: grayscale(1);
     }
     @media screen and (min-width: $sm) {
         padding: 50px 10%;

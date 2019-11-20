@@ -17,6 +17,7 @@
         background-position: center;
         background-image: url("../hero.jpg");
         opacity: 0.2;
+        filter: grayscale(1);
     }
     @media screen and (min-width: $medium){
         padding: 120px 20px;

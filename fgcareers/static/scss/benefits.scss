@@ -16,6 +16,7 @@
         background-image: url('../benefits_bg.jpg');
         background-attachment: fixed;
         opacity: 0.1;
+        filter: grayscale(1);
     }
     @media screen and (min-width: $sm) {
         padding: 100px 10%;
