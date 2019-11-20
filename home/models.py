@@ -46,6 +46,6 @@ class HomePage(Page):
     def get_context(self, request):
         # Update context to include only published posts
         context = super().get_context(request)
-        vacancies = self.get_children().live()
+        vacancies = self.get_children().order_by("title").live()
         context['vacancies'] = vacancies
         return context
