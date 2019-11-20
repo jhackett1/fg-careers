@@ -12,7 +12,7 @@
                                 <a href="{{ vacancy.url }}" class="vacancy-list__link">
                                     <h3 class="vacancy-list__headline">{{ vacancy.title }}</h3>
                                 </a>
-                                <p class="vacancy-list__meta"><strong>{{ vacancy.team }} team</strong>{% if vacancy.closing_date %} Closes {{ vacancy.closing_date|date:"d F" }}{% endif %}</p>
+                                <p class="vacancy-list__meta"><strong>{{ vacancy.location }}</strong>{% if vacancy.closing_date %} Closes {{ vacancy.closing_date|date:"d F" }}{% endif %}</p>
                             </li>
                         {% endwith %}
                     {% endfor %}

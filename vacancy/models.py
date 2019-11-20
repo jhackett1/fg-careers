@@ -22,7 +22,7 @@ class VacancyPage(Page):
         related_name="+",
         help_text="This image appears at the top of the page and in social media previews."
     )
-    team = models.CharField(max_length=100, null=True, blank=False)
+    location = models.CharField(max_length=100, null=True, blank=False)
     closing_date = models.DateField(null=True, blank=True)
     # location = models.CharField(max_length=100, null=True, blank=False)
     # salary = models.CharField(max_length=100, null=True, blank=False)
@@ -39,7 +39,7 @@ class VacancyPage(Page):
 
     content_panels = Page.content_panels + [
         MultiFieldPanel([FieldRowPanel([
-            FieldPanel("team"),
+            FieldPanel("location"),
             FieldPanel("closing_date")
         ])], "Key vacancy info"),
         StreamFieldPanel("content")
